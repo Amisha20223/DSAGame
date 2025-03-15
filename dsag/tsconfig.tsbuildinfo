@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/app/page.tsx","./src/components/fact-card.tsx","./src/components/game-board.tsx","./src/components/home.tsx","./src/components/question-modal.tsx","./src/components/tile.tsx","./src/components/utils/path-generator.ts","./src/data/facts.ts","./src/data/questions.ts","./src/lib/utils.ts"],"version":"5.7.3"}
