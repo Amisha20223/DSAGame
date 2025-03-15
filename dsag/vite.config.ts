@@ -1,26 +1,13 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-})
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
- 
-// @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         border: "hsl(var(--border))", // Add border color from CSS variables
-//         background: "hsl(var(--background))",
-//         foreground: "hsl(var(--foreground))",
-//       },
-//     },
-//   },
-//   plugins: [],
-// };
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+})
