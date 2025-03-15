@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@config "vite.config.js";
+
+@import "tailwindcss";
  
 @layer base {
   :root {
@@ -33,6 +36,13 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+  }
+  .border{
+    border-color: hsl(var(--border)); /* Manually applying border color */
+  }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
   }
  
   .dark {
